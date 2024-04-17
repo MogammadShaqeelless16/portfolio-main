@@ -9,7 +9,7 @@
     "start:frontend": "cd client && npm start",
     "build:frontend": "cd client && npm run build",
     "deploy": "npm run build:frontend && npm run start:backend",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    "start": "concurrently  \"npm run start:backend\" \"npm run start:frontend\""
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
