@@ -8,7 +8,7 @@
     "prod:backend": "NODE_ENV=production nodemon server.js",
     "start:frontend": "cd client && npm start",
     "build:frontend": "cd client && npm run build",
-    "deploy": "npm run build:frontend && npm run start:backend",
+    "deploy": "npm run start:backend && npm run build:frontend",
     "start": "concurrently  \"npm run start:backend\" \"npm run start:frontend\""
   },
   "dependencies": {
