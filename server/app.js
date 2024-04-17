@@ -16,7 +16,7 @@ const { getPublication } = require("./Controller/publicationController");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://amaan-tc7y.onrender.com/",
+    origin: "http://localhost:3000/",
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     credentials: true,
   })

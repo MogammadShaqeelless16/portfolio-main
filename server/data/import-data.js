@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 const Skill = require("../Model/skillModel");
 const About = require("../Model/aboutModel");
 const Project = require("../Model/projectModel");
-dotenv.config({ path: "../Config/config.env" });
+dotenv.config();
 const education = JSON.parse(
   fs.readFileSync(`${__dirname}/education.json`, "utf-8")
 );
