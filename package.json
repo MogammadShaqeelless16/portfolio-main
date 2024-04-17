@@ -4,7 +4,7 @@
   "description": "portfolio website",
   "scripts": {
     "start:backend": "cd server && npm start server",
-    "dev:backend": "cd backend && npm start server",
+    "dev:backend": "cd backend && nodemon server.js",
     "prod:backend": "NODE_ENV=production nodemon server.js",
     "start:frontend": "cd client && npm start",
     "build:frontend": "cd client && npm run build",
