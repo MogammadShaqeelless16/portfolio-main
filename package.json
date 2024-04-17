@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "portfolio website",
   "scripts": {
-    "start:backend": "node server.js",
-    "dev:backend": "nodemon server.js",
+    "start:backend": "cd server && npm start server",
+    "dev:backend": "cd backend && npm start server",
     "prod:backend": "NODE_ENV=production nodemon server.js",
     "start:frontend": "cd client && npm start",
     "build:frontend": "cd client && npm run build",
@@ -22,6 +22,7 @@
     "axios": "^1.4.0",
     "http-proxy-middleware": "^2.0.6",
     "jodit-react": "^1.3.39",
+    "nodemon": "^3.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
@@ -39,5 +40,8 @@
     "redux-thunk": "^2.4.2",
     "typed.js": "^2.0.16",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
