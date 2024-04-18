@@ -16,7 +16,7 @@ const { getPublication } = require("./Controller/publicationController");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://portfolio-main-1.onrender.com/",
+    origin: "https://portfolio-main-1.onrender.com/, http://localhost:3000/ ",
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     credentials: true,
   })
